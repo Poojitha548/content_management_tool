@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Retrieve the form values
       var name = document.querySelector('#Name').value;
       var email = document.querySelector('#Email').value;
-      var password = document.querySelector('#password').value;
+      var image = document.querySelector('#image').value;
+      var video = document.querySelector('#video').value;
       
 
       // Display the filled details on the webpage
@@ -16,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <h1>Blog Details</h1>
         <h2>Name: ${Name}</h2>
         <p>Email: ${Email}</p>
-        <p>password:${password}</p>
-        
-      `;
+        <img src="${image}" alt="Blog Image">
+        <p>Video URL: ${video}</p>
+        `;
     });
   });
